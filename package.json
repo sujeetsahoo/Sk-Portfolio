@@ -1,0 +1,20 @@
+{
+  "name": "sujeet-kumar-portfolio",
+  "version": "1.0.0",
+  "description": "Sujeet Kumar Portfolio with Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "Sujeet Kumar",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.10"
+  }
+}

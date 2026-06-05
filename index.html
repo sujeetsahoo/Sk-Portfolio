@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujeet Kumar | Full Stack Web Developer</title>
+  <meta name="description" content="Sujeet Kumar - Results-driven Full Stack Web Developer with 2+ years of experience in WordPress, Shopify, and custom web development. Expert in SEO, WATI automation, and Zoho CRM." />
+  <meta name="keywords" content="Sujeet Kumar, Web Developer, WordPress, Shopify, PHP, JavaScript, Full Stack, SEO, New Delhi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ CURSOR GLOW ═══ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══ LOADER ═══ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">SK</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <span class="loader-text">Loading Portfolio...</span>
+    </div>
+  </div>
+
+  <!-- ═══ PARTICLES ═══ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">SK</span>
+        <span class="logo-dot"></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-hire"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <i class="fa-solid fa-circle-check"></i> Available for Work
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Hi, I'm</span>
+        <span class="title-name gradient-text">Sujeet Kumar</span>
+        <span class="title-role">Full Stack Web Developer</span>
+      </h1>
+      <p class="hero-desc">
+        Results-driven developer with <strong>2+ years</strong> of experience crafting high-performance web solutions using <strong>WordPress, Shopify, PHP</strong> & <strong>JavaScript</strong> — backed by deep expertise in SEO, WATI automation, Zoho CRM, <strong>Google Business Profile</strong>, <strong>Google Merchant Center</strong> & <strong>Google Workspace</strong>.
+      </p>
+      <div class="hero-tags">
+        <span class="tag"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+        <span class="tag"><i class="fa-brands fa-shopify"></i> Shopify</span>
+        <span class="tag"><i class="fa-solid fa-code"></i> PHP</span>
+        <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="tag"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO</span>
+        <span class="tag"><i class="fa-brands fa-whatsapp"></i> WATI</span>
+        <span class="tag"><i class="fa-brands fa-google"></i> GMB</span>
+        <span class="tag"><i class="fa-solid fa-store"></i> Merchant Center</span>
+        <span class="tag"><i class="fa-solid fa-envelope-open-text"></i> Google Workspace</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+        <a href="#contact" class="btn-secondary"><i class="fa-solid fa-handshake"></i> Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-img">
+          <span class="avatar-initials">SK</span>
+        </div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+      </div>
+      <div class="floating-card card-1">
+        <span class="fc-icon"><i class="fa-solid fa-rocket"></i></span>
+        <div><strong>15+</strong><small>Projects Done</small></div>
+      </div>
+      <div class="floating-card card-2">
+        <span class="fc-icon"><i class="fa-solid fa-star"></i></span>
+        <div><strong>Top</strong><small>Developer</small></div>
+      </div>
+      <div class="floating-card card-3">
+        <span class="fc-icon"><i class="fa-solid fa-briefcase"></i></span>
+        <div><strong>Open</strong><small>to Opportunities</small></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Me</span>
+        <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+        <p class="section-sub">Passionate about building scalable, high-performance web solutions</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-card-big">
+            <div class="about-avatar">SK</div>
+            <div class="about-info">
+              <h3>Sujeet Kumar</h3>
+              <p>Full Stack Web Developer</p>
+              <div class="about-location">
+                <i class="fa-solid fa-location-dot"></i>
+                F-Block, Aya Nagar, New Delhi
+              </div>
+            </div>
+          </div>
+          <div class="about-contact-links">
+            <a href="tel:+916206406515" class="about-link">
+              <div class="al-icon"><i class="fa-solid fa-phone"></i></div>
+              <div><strong>Phone</strong><span>+91 62064 06515</span></div>
+            </a>
+            <a href="mailto:sahusujeet751@gmail.com" class="about-link">
+              <div class="al-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div><strong>Email</strong><span>sahusujeet751@gmail.com</span></div>
+            </a>
+            <a href="https://wa.me/916206406515" class="about-link whatsapp-link" target="_blank">
+              <div class="al-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div><strong>WhatsApp</strong><span>Chat Directly</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <h3 class="about-heading">Professional <span class="gradient-text">Summary</span></h3>
+          <p class="about-text">
+            I'm a <strong>Results-driven Full Stack Web Developer</strong> with 2+ years of hands-on experience in <strong>WordPress, Shopify, and custom web development</strong>. My expertise spans performance optimization, backend integrations, and business growth solutions.
+          </p>
+          <p class="about-text">
+            Currently working at <strong>Offtraildia Pvt. Ltd.</strong> where I manage full CRM configurations, custom modules, payment gateway integrations, and WATI WhatsApp Business API implementations. I bring strong technical leadership combined with user-focused design thinking.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="hi-icon"><i class="fa-brands fa-wordpress"></i></div>
+              <div>
+                <strong>WordPress Expert</strong>
+                <span>Theme development & custom plugins</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon"><i class="fa-brands fa-shopify"></i></div>
+              <div>
+                <strong>E-Commerce Specialist</strong>
+                <span>Shopify & WooCommerce stores</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <strong>SEO Strategist</strong>
+                <span>15% organic traffic growth</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon"><i class="fa-solid fa-robot"></i></div>
+              <div>
+                <strong>Automation Expert</strong>
+                <span>WATI & Zoho CRM workflows</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Hire Me Now</a>
+            <a href="https://wa.me/916206406515?text=Hi%20Sujeet!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." class="btn-whatsapp" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Technical Skills</span>
+        <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+        <p class="section-sub">Technologies and tools I work with daily</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="sc-header">
+            <div class="sc-icon"><i class="fa-solid fa-terminal"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>PHP</span><span>85%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>JavaScript</span><span>80%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>HTML5 / CSS3</span><span>90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>Java (OOP)</span><span>70%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>Core Java</span><span>65%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="sc-header">
+            <div class="sc-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Frameworks & Platforms</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>WordPress</span><span>92%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>Shopify</span><span>85%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>Bootstrap / Tailwind</span><span>88%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>Elementor / cPanel</span><span>90%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="sb-info"><span>GitHub / Chrome DevTools</span><span>80%</span></div>
+              <div class="sb-track"><div class="sb-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="sc-header">
+            <div class="sc-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-server"></i> MSSQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-table"></i> SQL</span>
+            <span class="skill-tag"><i class="fa-solid fa-circle-nodes"></i> Oracle</span>
+          </div>
+          <div class="sc-header" style="margin-top:2rem">
+            <div class="sc-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Others</h3>
+          </div>
+          <div class="skill-tags-grid">
+            <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+            <span class="skill-tag"><i class="fa-brands fa-whatsapp"></i> WATI</span>
+            <span class="skill-tag"><i class="fa-solid fa-briefcase"></i> Zoho CRM</span>
+            <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> SEO</span>
+            <span class="skill-tag"><i class="fa-solid fa-image"></i> Image Optimization</span>
+            <span class="skill-tag"><i class="fa-solid fa-bolt"></i> JS Caching</span>
+            <span class="skill-tag"><i class="fa-solid fa-credit-card"></i> Payment Gateway</span>
+            <span class="skill-tag"><i class="fa-solid fa-server"></i> cPanel</span>
+            <span class="skill-tag"><i class="fa-brands fa-google"></i> GMB Profile</span>
+            <span class="skill-tag"><i class="fa-solid fa-sliders"></i> GMB Optimization</span>
+            <span class="skill-tag"><i class="fa-solid fa-store"></i> Google Merchant Center</span>
+            <span class="skill-tag"><i class="fa-solid fa-envelope-open-text"></i> Google Workspace</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Icons -->
+      <div class="tech-stack-marquee">
+        <div class="marquee-track">
+          <div class="tech-item"><i class="fa-brands fa-wordpress"></i><span>WordPress</span></div>
+          <div class="tech-item"><i class="fa-brands fa-shopify"></i><span>Shopify</span></div>
+          <div class="tech-item"><i class="fa-solid fa-code"></i><span>PHP</span></div>
+          <div class="tech-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="tech-item"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+          <div class="tech-item"><i class="fa-solid fa-wind"></i><span>Tailwind</span></div>
+          <div class="tech-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+          <div class="tech-item"><i class="fa-solid fa-briefcase"></i><span>Zoho CRM</span></div>
+          <div class="tech-item"><i class="fa-brands fa-whatsapp"></i><span>WATI</span></div>
+          <div class="tech-item"><i class="fa-solid fa-pen-to-square"></i><span>Elementor</span></div>
+          <div class="tech-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="tech-item"><i class="fa-solid fa-magnifying-glass"></i><span>SEO</span></div>
+          <div class="tech-item"><i class="fa-brands fa-google"></i><span>GMB Profile</span></div>
+          <div class="tech-item"><i class="fa-solid fa-store"></i><span>Merchant Center</span></div>
+          <div class="tech-item"><i class="fa-solid fa-envelope-open-text"></i><span>Google Workspace</span></div>
+          <!-- duplicate for seamless loop -->
+          <div class="tech-item"><i class="fa-brands fa-wordpress"></i><span>WordPress</span></div>
+          <div class="tech-item"><i class="fa-brands fa-shopify"></i><span>Shopify</span></div>
+          <div class="tech-item"><i class="fa-solid fa-code"></i><span>PHP</span></div>
+          <div class="tech-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="tech-item"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+          <div class="tech-item"><i class="fa-solid fa-wind"></i><span>Tailwind</span></div>
+          <div class="tech-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+          <div class="tech-item"><i class="fa-solid fa-briefcase"></i><span>Zoho CRM</span></div>
+          <div class="tech-item"><i class="fa-brands fa-whatsapp"></i><span>WATI</span></div>
+          <div class="tech-item"><i class="fa-solid fa-pen-to-square"></i><span>Elementor</span></div>
+          <div class="tech-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="tech-item"><i class="fa-solid fa-magnifying-glass"></i><span>SEO</span></div>
+          <div class="tech-item"><i class="fa-brands fa-google"></i><span>GMB Profile</span></div>
+          <div class="tech-item"><i class="fa-solid fa-store"></i><span>Merchant Center</span></div>
+          <div class="tech-item"><i class="fa-solid fa-envelope-open-text"></i><span>Google Workspace</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Experience</span>
+        <h2 class="section-title">Work <span class="gradient-text">History</span></h2>
+        <p class="section-sub">My professional journey and contributions</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="tl-dot active"></div>
+          </div>
+          <div class="timeline-card active-job">
+            <div class="tc-header">
+              <div>
+                <h3>Web Developer</h3>
+                <span class="company">Offtraildia Pvt. Ltd.</span>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-badge current">Current</span>
+                <span class="tc-date">Sep 2025 – Present</span>
+              </div>
+            </div>
+            <ul class="tc-list">
+              <li>Developed and optimized the company website, improving overall <strong>site performance and backend functionality</strong></li>
+              <li>Managed <strong>Zoho CRM technical configuration</strong> including custom modules, field setup, and system maintenance; supported integrations and assisted in configuring workflows and automations</li>
+              <li>Integrated <strong>WATI WhatsApp Business API</strong> for automated notifications and customer communication flows</li>
+              <li>Implemented <strong>payment gateway integrations</strong> with webhook-based payment confirmation systems</li>
+              <li>Developed <strong>logistics and order synchronization systems</strong> for automated shipping and order updates</li>
+            </ul>
+            <div class="tc-tags">
+              <span>WordPress</span><span>Zoho CRM</span><span>WATI</span><span>PHP</span><span>Payment Gateway</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3>Web Developer</h3>
+                <span class="company">Aashika Media, Delhi</span>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-date">Sep 2024 – Aug 2025</span>
+              </div>
+            </div>
+            <ul class="tc-list">
+              <li>Promoted to a full-time role after internship based on strong development performance</li>
+              <li>Developed and maintained <strong>10+ responsive websites</strong> using WordPress, HTML, CSS, and JavaScript</li>
+              <li>Managed website <strong>migration using cPanel and FTP</strong>, ensuring minimal downtime</li>
+              <li>Implemented <strong>on-page SEO strategies</strong>, increasing organic traffic by <strong>15%</strong></li>
+              <li>Improved website performance through <strong>JS/CSS optimization, image compression, and caching</strong> techniques</li>
+              <li>Collaborated with designers and marketing teams to improve <strong>user engagement and UX performance</strong></li>
+            </ul>
+            <div class="tc-tags">
+              <span>WordPress</span><span>HTML/CSS</span><span>JavaScript</span><span>SEO</span><span>cPanel</span><span>FTP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed projects within experience -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3>MSMECII & WorldGropes Websites</h3>
+                <span class="company">Aashika Media — Key Projects</span>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-date">2024 – 2025</span>
+              </div>
+            </div>
+            <ul class="tc-list">
+              <li>Optimized the <strong>msmecii.in</strong> website (WordPress) to improve performance and resolve technical issues</li>
+              <li>Diagnosed and fixed <strong>payment gateway integration issues</strong>, ensuring smooth transaction processing</li>
+              <li>Managed domain, hosting, backups, and website maintenance through cPanel and hosting tools</li>
+              <li>Integrated and technical management for the <strong>World Green Expo 2025 website</strong> (worldgropexs.in)</li>
+              <li>Created and managed <strong>multiple customized gauge</strong> plugins on the PHP-based server-side</li>
+              <li>Ensured website stability, testing configuration, and smooth deployment during the event</li>
+            </ul>
+            <div class="tc-tags">
+              <span>WordPress</span><span>cPanel</span><span>PHP</span><span>Gauges</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+        <p class="section-sub">Handpicked projects showcasing my best work</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="ecommerce">
+          <div class="pc-glow"></div>
+          <div class="pc-header">
+            <div class="pc-icon"><i class="fa-solid fa-shirt"></i></div>
+            <div class="pc-links">
+              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Fashion Designer Portfolio Website</h3>
+          <p>Independently developed a portfolio website for a fashion designer to showcase products and collections. Implemented a <strong>product listing section</strong> allowing visitors to browse available fashion items.</p>
+          <div class="pc-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML</span><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ecommerce">
+          <div class="pc-glow"></div>
+          <div class="pc-header">
+            <div class="pc-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div class="pc-links">
+              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Shopify Spare Parts Finder</h3>
+          <p>Built a custom <strong>Spare Parts Finder</strong> using Shopify Liquid and JavaScript. Implemented a multi-step selection system where users choose <strong>vehicle type, model, and parts category</strong>. Filters product data by category with smart recommendations.</p>
+          <div class="pc-tags">
+            <span><i class="fa-brands fa-shopify"></i> Shopify</span><span><i class="fa-solid fa-droplet"></i> Liquid</span><span><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="crm">
+          <div class="pc-glow"></div>
+          <div class="pc-header">
+            <div class="pc-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="pc-links">
+              <a href="https://msmecii.in" class="pc-link" title="View Project" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>MSMECII.in Website</h3>
+          <p>Optimized and maintained the <strong>msmecii.in</strong> platform. Fixed payment gateway integration issues, diagnosed performance bottlenecks, managed domain, hosting, backups, and website maintenance through cPanel.</p>
+          <div class="pc-tags">
+            <span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-solid fa-code"></i> PHP</span><span><i class="fa-solid fa-server"></i> cPanel</span><span><i class="fa-solid fa-credit-card"></i> Payment Gateway</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="automation">
+          <div class="pc-glow"></div>
+          <div class="pc-header">
+            <div class="pc-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="pc-links">
+              <a href="https://worldgropexs.in" class="pc-link" title="View Project" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>World Green Expo 2025</h3>
+          <p>Technical management for the <strong>World Green Expo 2025</strong> website. Created multiple customized gauge plugins on PHP-based server-side. Ensured website stability and smooth deployment during the event.</p>
+          <div class="pc-tags">
+            <span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-solid fa-code"></i> PHP</span><span><i class="fa-solid fa-server"></i> cPanel</span><span><i class="fa-solid fa-puzzle-piece"></i> Plugins</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="automation">
+          <div class="pc-glow"></div>
+          <div class="pc-header">
+            <div class="pc-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="pc-links">
+              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>WATI WhatsApp Inquiry System</h3>
+          <p>Integrated a <strong>WhatsApp inquiry system</strong> enabling customers to send product inquiries directly with product details. Added functionality for customers to enquire about products via WhatsApp along with the image. Ensured responsive layout for mobile and desktop users.</p>
+          <div class="pc-tags">
+            <span><i class="fa-brands fa-whatsapp"></i> WATI API</span><span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-solid fa-code"></i> PHP</span><span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="crm">
+          <div class="pc-glow"></div>
+          <div class="pc-header">
+            <div class="pc-icon"><i class="fa-solid fa-gears"></i></div>
+            <div class="pc-links">
+              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Zoho CRM Configuration & Automation</h3>
+          <p>Full Zoho CRM configuration including custom modules, field setup, system maintenance. Supported integrations and assisted in configuring <strong>workflows and automations</strong> for enterprise business processes.</p>
+          <div class="pc-tags">
+            <span><i class="fa-solid fa-briefcase"></i> Zoho CRM</span><span><i class="fa-solid fa-robot"></i> Automation</span><span><i class="fa-solid fa-diagram-project"></i> Workflows</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION & CERTIFICATIONS ═══ -->
+  <section class="section edu-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Education & Certs</span>
+        <h2 class="section-title">Learning <span class="gradient-text">Journey</span></h2>
+        <p class="section-sub">Academic background and professional certifications</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-col reveal">
+          <h3 class="edu-col-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <div class="edu-card">
+            <div class="edu-card-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="edu-card-body">
+              <h4>B.Tech — ECE</h4>
+              <p>Ganga Institute of Technology &amp; Management, Jhajjar (Haryana)</p>
+              <span class="edu-year"><i class="fa-solid fa-calendar"></i> 2019 – 2023</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card-icon"><i class="fa-solid fa-book"></i></div>
+            <div class="edu-card-body">
+              <h4>12th — Blue School Examination Board</h4>
+              <p>Darbhanga (Bihar)</p>
+              <span class="edu-year"><i class="fa-solid fa-calendar"></i> 2017 – 2019</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-col reveal">
+          <h3 class="edu-col-title"><i class="fa-solid fa-trophy"></i> Certifications</h3>
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-globe"></i></div>
+            <div>
+              <h4>Web Development Certification</h4>
+              <p>Internshala</p>
+            </div>
+            <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Certified</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+            <div>
+              <h4>Java Programming Certification</h4>
+              <p>Q5pakes</p>
+            </div>
+            <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Certified</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-file-code"></i></div>
+            <div>
+              <h4>Core Java Training</h4>
+              <p>Core Java, basic programming logic</p>
+            </div>
+            <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Certified</div>
+          </div>
+        </div>
+        <div class="edu-col reveal">
+          <h3 class="edu-col-title"><i class="fa-solid fa-earth-asia"></i> Languages</h3>
+          <div class="lang-card">
+            <div class="lang-info">
+              <span class="lang-name"><i class="fa-solid fa-language"></i> English</span>
+              <span class="lang-level">Intermediate</span>
+            </div>
+            <div class="lang-bar"><div class="lang-fill" data-width="65"></div></div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-info">
+              <span class="lang-name"><i class="fa-solid fa-language"></i> Hindi</span>
+              <span class="lang-level">Advance</span>
+            </div>
+            <div class="lang-bar"><div class="lang-fill" data-width="95"></div></div>
+          </div>
+          <div class="lang-card">
+            <div class="lang-info">
+              <span class="lang-name"><i class="fa-solid fa-language"></i> Maithili</span>
+              <span class="lang-level">Advance</span>
+            </div>
+            <div class="lang-bar"><div class="lang-fill" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-sub">Have a project in mind? Let's build something great together!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="contact-info-cards">
+            <div class="ci-card">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Me</h4>
+                <a href="mailto:sahusujeet751@gmail.com">sahusujeet751@gmail.com</a>
+              </div>
+            </div>
+            <div class="ci-card">
+              <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Call Me</h4>
+                <a href="tel:+916206406515">+91 62064 06515</a>
+              </div>
+            </div>
+            <div class="ci-card whatsapp-ci">
+              <div class="ci-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/916206406515?text=Hi%20Sujeet!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank">Chat on WhatsApp</a>
+              </div>
+            </div>
+            <div class="ci-card">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Location</h4>
+                <span>F-Block, Aya Nagar, New Delhi</span>
+              </div>
+            </div>
+          </div>
+          <div class="quick-contact">
+            <h4><i class="fa-brands fa-whatsapp"></i> Quick Contact via WhatsApp</h4>
+            <p>Click below to instantly message me on WhatsApp with your project details.</p>
+            <a href="https://wa.me/916206406515?text=Hi%20Sujeet!%20I%20found%20your%20portfolio%20and%20I%27m%20interested%20in%20discussing%20a%20project.%20Can%20we%20connect%3F" class="btn-whatsapp-large" target="_blank" id="whatsappQuickBtn">
+              <i class="fa-brands fa-whatsapp"></i>
+              Message on WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <div class="contact-form-card">
+            <h3>Send an <span class="gradient-text">Enquiry</span></h3>
+            <p class="form-subtitle">Fill out the form and I'll get back to you within 24 hours via email and WhatsApp.</p>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                  <span class="form-error" id="firstNameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                  <span class="form-error" id="lastNameError"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic...</option>
+                  <option value="WordPress Development">WordPress Development</option>
+                  <option value="Shopify Development">Shopify Development</option>
+                  <option value="Custom Web Development">Custom Web Development</option>
+                  <option value="SEO Optimization">SEO Optimization</option>
+                  <option value="Zoho CRM Setup">Zoho CRM Setup</option>
+                  <option value="WATI Integration">WATI / WhatsApp Integration</option>
+                  <option value="GMB Profile & Optimization">GMB Profile & Optimization</option>
+                  <option value="Google Merchant Center">Google Merchant Center</option>
+                  <option value="Google Workspace Setup">Google Workspace Setup</option>
+                  <option value="Website Maintenance">Website Maintenance</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="form-error" id="subjectError"></span>
+              </div>
+              <div class="form-group">
+                <label for="budget">Project Budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select budget range...</option>
+                  <option value="Under ₹10,000">Under ₹10,000</option>
+                  <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+                  <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                  <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                  <option value="₹1,00,000+">₹1,00,000+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <div class="form-check-group">
+                <label class="form-check">
+                  <input type="checkbox" id="whatsappNotify" name="whatsappNotify" checked />
+                  <span class="checkmark"></span>
+                  Also notify me via WhatsApp
+                </label>
+              </div>
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Enquiry</span>
+                <span class="btn-loader" style="display:none"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+              </button>
+            </form>
+            <!-- Success message -->
+            <div class="form-success" id="formSuccess" style="display:none">
+              <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <h4>Message Sent Successfully!</h4>
+              <p>Thank you! I'll respond within 24 hours. If you checked WhatsApp, you'll also be redirected to chat directly.</p>
+              <button class="btn-secondary" onclick="resetForm()"><i class="fa-solid fa-rotate-left"></i> Send Another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-text">SK</span>
+        <span class="footer-tagline">Full Stack Web Developer</span>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:sahusujeet751@gmail.com" title="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+916206406515" title="Call" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/916206406515" title="WhatsApp" class="social-icon" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com" title="GitHub" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" title="LinkedIn" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sujeet Kumar. Crafted with 💙 | New Delhi, India</p>
+    </div>
+  </footer>
+
+  <!-- ═══ WHATSAPP FLOATING BUTTON ═══ -->
+  <a href="https://wa.me/916206406515?text=Hi%20Sujeet!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." 
+     class="whatsapp-float" 
+     id="whatsappFloat"
+     target="_blank"
+     title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wf-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <!-- ═══ BACK TO TOP ═══ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
