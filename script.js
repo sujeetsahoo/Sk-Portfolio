@@ -295,12 +295,15 @@ contactForm.addEventListener('submit', async (e) => {
   const message = document.getElementById('message').value.trim();
   const wantsWhatsapp = document.getElementById('whatsappNotify').checked;
 
-  // ── SEND TO BACKEND API ──
+  // ── SEND EMAIL via Web3Forms (free, no backend) ──
+  const formData = new FormData(contactForm);
+  formData.set('subject', 'Portfolio Enquiry: ' + subject + ' — from ' + firstName + ' ' + lastName);
+  formData.set('from_name', firstName + ' ' + lastName);
+
   try {
-    const response = await fetch('/api/contact', {
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstName, lastName, email, phone, subject, budget, message }),
+      body: formData,
     });
 
     const result = await response.json();
@@ -312,12 +315,21 @@ contactForm.addEventListener('submit', async (e) => {
       formSuccess.style.animation = 'fadeInDown 0.6s ease forwards';
 
       // ── OPEN WHATSAPP with pre-filled message ──
-      if (wantsWhatsapp && result.whatsappLink) {
-        window.open(result.whatsappLink, '_blank');
+      if (wantsWhatsapp) {
+        const waMessage = encodeURIComponent(
+          `Hi Sujeet! I just submitted an enquiry on your portfolio.\n\n` +
+          `*Name:* ${firstName} ${lastName}\n` +
+          `*Email:* ${email}\n` +
+          `*Phone:* ${phone || 'Not provided'}\n` +
+          `*Subject:* ${subject}\n` +
+          `*Budget:* ${budget || 'Not specified'}\n\n` +
+          `*Message:* ${message}`
+        );
+        window.open(`https://wa.me/916206406515?text=${waMessage}`, '_blank');
       }
     } else {
-      alert('⚠️ ' + (result.message || 'Failed to send message. Please try again.'));
-      console.error('Server error:', result);
+      alert('⚠️ Failed to send message. Please try again or contact me directly at sahusujeet751@gmail.com');
+      console.error('Web3Forms error:', result);
     }
   } catch (error) {
     alert('⚠️ Network error. Please check your connection and try again.');
