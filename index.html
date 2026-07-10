@@ -8,8 +8,8 @@
   <meta name="keywords" content="Sujeet Kumar, Web Developer, WordPress, Shopify, PHP, JavaScript, Full Stack, SEO, New Delhi" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -470,101 +470,199 @@
         <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
         <p class="section-sub">Handpicked projects showcasing my best work</p>
       </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All</button>
+        <button class="filter-btn" data-filter="web-dev"><i class="fa-solid fa-code"></i> Web Development</button>
+        <button class="filter-btn" data-filter="maintenance"><i class="fa-solid fa-wrench"></i> Maintenance</button>
+        <button class="filter-btn" data-filter="seo"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO</button>
+        <button class="filter-btn" data-filter="wati"><i class="fa-brands fa-whatsapp"></i> WATI</button>
+        <button class="filter-btn" data-filter="gmb"><i class="fa-brands fa-google"></i> GMB</button>
+        <button class="filter-btn" data-filter="others"><i class="fa-solid fa-ellipsis"></i> Others</button>
+        <button class="filter-btn" data-filter="hosting"><i class="fa-solid fa-server"></i> Hosting</button>
+      </div>
+
       <div class="projects-grid">
 
-        <div class="project-card reveal" data-category="ecommerce">
-          <div class="pc-glow"></div>
-          <div class="pc-header">
-            <div class="pc-icon"><i class="fa-solid fa-shirt"></i></div>
-            <div class="pc-links">
-              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- 1. Fashion Designer Portfolio -->
+        <div class="project-card reveal" data-category="web-dev">
+          <div class="pc-image">
+            <img src="assets/projects/fashion-portfolio.png" alt="Fashion Designer Portfolio Website" loading="lazy" />
+            <div class="pc-image-overlay">
+              <a href="#" class="pc-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
             </div>
+            <span class="pc-category-badge"><i class="fa-solid fa-code"></i> Web Development</span>
           </div>
-          <h3>Fashion Designer Portfolio Website</h3>
-          <p>Independently developed a portfolio website for a fashion designer to showcase products and collections. Implemented a <strong>product listing section</strong> allowing visitors to browse available fashion items.</p>
-          <div class="pc-tags">
-            <span><i class="fa-brands fa-html5"></i> HTML</span><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <div class="pc-body">
+            <h3>Fashion Designer Portfolio Website</h3>
+            <p>Independently developed a portfolio website for a fashion designer to showcase products and collections with a <strong>product listing section</strong>.</p>
+            <div class="pc-tags">
+              <span><i class="fa-brands fa-html5"></i> HTML</span>
+              <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            </div>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="ecommerce">
-          <div class="pc-glow"></div>
-          <div class="pc-header">
-            <div class="pc-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <div class="pc-links">
-              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- 2. Shopify Spare Parts Finder -->
+        <div class="project-card reveal" data-category="web-dev">
+          <div class="pc-image">
+            <img src="assets/projects/shopify-parts.png" alt="Shopify Spare Parts Finder" loading="lazy" />
+            <div class="pc-image-overlay">
+              <a href="#" class="pc-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
             </div>
+            <span class="pc-category-badge"><i class="fa-solid fa-code"></i> Web Development</span>
           </div>
-          <h3>Shopify Spare Parts Finder</h3>
-          <p>Built a custom <strong>Spare Parts Finder</strong> using Shopify Liquid and JavaScript. Implemented a multi-step selection system where users choose <strong>vehicle type, model, and parts category</strong>. Filters product data by category with smart recommendations.</p>
-          <div class="pc-tags">
-            <span><i class="fa-brands fa-shopify"></i> Shopify</span><span><i class="fa-solid fa-droplet"></i> Liquid</span><span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <div class="pc-body">
+            <h3>Shopify Spare Parts Finder</h3>
+            <p>Built a custom <strong>Spare Parts Finder</strong> with multi-step selection for <strong>vehicle type, model, and parts category</strong> using Shopify Liquid.</p>
+            <div class="pc-tags">
+              <span><i class="fa-brands fa-shopify"></i> Shopify</span>
+              <span><i class="fa-solid fa-droplet"></i> Liquid</span>
+              <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            </div>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="crm">
-          <div class="pc-glow"></div>
-          <div class="pc-header">
-            <div class="pc-icon"><i class="fa-solid fa-globe"></i></div>
-            <div class="pc-links">
-              <a href="https://msmecii.in" class="pc-link" title="View Project" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- 3. MSMECII.in -->
+        <div class="project-card reveal" data-category="maintenance">
+          <div class="pc-image">
+            <img src="assets/projects/msmecii.png" alt="MSMECII.in Website" loading="lazy" />
+            <div class="pc-image-overlay">
+              <a href="https://msmecii.in" class="pc-view-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Live</a>
             </div>
+            <span class="pc-category-badge"><i class="fa-solid fa-wrench"></i> Maintenance</span>
           </div>
-          <h3>MSMECII.in Website</h3>
-          <p>Optimized and maintained the <strong>msmecii.in</strong> platform. Fixed payment gateway integration issues, diagnosed performance bottlenecks, managed domain, hosting, backups, and website maintenance through cPanel.</p>
-          <div class="pc-tags">
-            <span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-solid fa-code"></i> PHP</span><span><i class="fa-solid fa-server"></i> cPanel</span><span><i class="fa-solid fa-credit-card"></i> Payment Gateway</span>
+          <div class="pc-body">
+            <h3>MSMECII.in Website</h3>
+            <p>Optimized and maintained the <strong>msmecii.in</strong> platform. Fixed payment gateway, managed domain, hosting, backups through cPanel.</p>
+            <div class="pc-tags">
+              <span><i class="fa-brands fa-wordpress"></i> WordPress</span>
+              <span><i class="fa-solid fa-code"></i> PHP</span>
+              <span><i class="fa-solid fa-server"></i> cPanel</span>
+              <span><i class="fa-solid fa-credit-card"></i> Payment</span>
+            </div>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="automation">
-          <div class="pc-glow"></div>
-          <div class="pc-header">
-            <div class="pc-icon"><i class="fa-solid fa-leaf"></i></div>
-            <div class="pc-links">
-              <a href="https://worldgropexs.in" class="pc-link" title="View Project" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- 4. World Green Expo 2025 -->
+        <div class="project-card reveal" data-category="web-dev">
+          <div class="pc-image">
+            <img src="assets/projects/green-expo.png" alt="World Green Expo 2025" loading="lazy" />
+            <div class="pc-image-overlay">
+              <a href="https://worldgropexs.in" class="pc-view-btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Live</a>
             </div>
+            <span class="pc-category-badge"><i class="fa-solid fa-code"></i> Web Development</span>
           </div>
-          <h3>World Green Expo 2025</h3>
-          <p>Technical management for the <strong>World Green Expo 2025</strong> website. Created multiple customized gauge plugins on PHP-based server-side. Ensured website stability and smooth deployment during the event.</p>
-          <div class="pc-tags">
-            <span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-solid fa-code"></i> PHP</span><span><i class="fa-solid fa-server"></i> cPanel</span><span><i class="fa-solid fa-puzzle-piece"></i> Plugins</span>
+          <div class="pc-body">
+            <h3>World Green Expo 2025</h3>
+            <p>Technical management for <strong>World Green Expo 2025</strong>. Created customized gauge plugins on PHP. Ensured stability during the event.</p>
+            <div class="pc-tags">
+              <span><i class="fa-brands fa-wordpress"></i> WordPress</span>
+              <span><i class="fa-solid fa-code"></i> PHP</span>
+              <span><i class="fa-solid fa-puzzle-piece"></i> Plugins</span>
+            </div>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="automation">
-          <div class="pc-glow"></div>
-          <div class="pc-header">
-            <div class="pc-icon"><i class="fa-brands fa-whatsapp"></i></div>
-            <div class="pc-links">
-              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- 5. WATI WhatsApp System -->
+        <div class="project-card reveal" data-category="wati">
+          <div class="pc-image">
+            <img src="assets/projects/wati-whatsapp.png" alt="WATI WhatsApp Inquiry System" loading="lazy" />
+            <div class="pc-image-overlay">
+              <a href="#" class="pc-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
             </div>
+            <span class="pc-category-badge"><i class="fa-brands fa-whatsapp"></i> WATI</span>
           </div>
-          <h3>WATI WhatsApp Inquiry System</h3>
-          <p>Integrated a <strong>WhatsApp inquiry system</strong> enabling customers to send product inquiries directly with product details. Added functionality for customers to enquire about products via WhatsApp along with the image. Ensured responsive layout for mobile and desktop users.</p>
-          <div class="pc-tags">
-            <span><i class="fa-brands fa-whatsapp"></i> WATI API</span><span><i class="fa-brands fa-wordpress"></i> WordPress</span><span><i class="fa-solid fa-code"></i> PHP</span><span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+          <div class="pc-body">
+            <h3>WATI WhatsApp Inquiry System</h3>
+            <p>Integrated a <strong>WhatsApp inquiry system</strong> enabling customers to send product inquiries with images directly via WATI API.</p>
+            <div class="pc-tags">
+              <span><i class="fa-brands fa-whatsapp"></i> WATI API</span>
+              <span><i class="fa-brands fa-wordpress"></i> WordPress</span>
+              <span><i class="fa-solid fa-code"></i> PHP</span>
+            </div>
           </div>
         </div>
 
-        <div class="project-card reveal" data-category="crm">
-          <div class="pc-glow"></div>
-          <div class="pc-header">
-            <div class="pc-icon"><i class="fa-solid fa-gears"></i></div>
-            <div class="pc-links">
-              <a href="#" class="pc-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <!-- 6. Zoho CRM -->
+        <div class="project-card reveal" data-category="others">
+          <div class="pc-image">
+            <img src="assets/projects/zoho-crm.png" alt="Zoho CRM Configuration" loading="lazy" />
+            <div class="pc-image-overlay">
+              <a href="#" class="pc-view-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+            </div>
+            <span class="pc-category-badge"><i class="fa-solid fa-ellipsis"></i> Others</span>
+          </div>
+          <div class="pc-body">
+            <h3>Zoho CRM Configuration &amp; Automation</h3>
+            <p>Full Zoho CRM configuration with custom modules. Configured <strong>workflows and automations</strong> for enterprise business processes.</p>
+            <div class="pc-tags">
+              <span><i class="fa-solid fa-briefcase"></i> Zoho CRM</span>
+              <span><i class="fa-solid fa-robot"></i> Automation</span>
+              <span><i class="fa-solid fa-diagram-project"></i> Workflows</span>
             </div>
           </div>
-          <h3>Zoho CRM Configuration & Automation</h3>
-          <p>Full Zoho CRM configuration including custom modules, field setup, system maintenance. Supported integrations and assisted in configuring <strong>workflows and automations</strong> for enterprise business processes.</p>
-          <div class="pc-tags">
-            <span><i class="fa-solid fa-briefcase"></i> Zoho CRM</span><span><i class="fa-solid fa-robot"></i> Automation</span><span><i class="fa-solid fa-diagram-project"></i> Workflows</span>
+        </div>
+
+        <!-- 7. GMB Profile Optimization -->
+        <div class="project-card reveal" data-category="gmb">
+          <div class="pc-image pc-image-icon">
+            <div class="pc-icon-large"><i class="fa-brands fa-google"></i></div>
+            <span class="pc-category-badge"><i class="fa-brands fa-google"></i> GMB</span>
+          </div>
+          <div class="pc-body">
+            <h3>Google Business Profile &amp; Merchant Center</h3>
+            <p>Created and optimized <strong>Google Business Profiles</strong> — category setup, service areas, photos, Q&amp;A, review management, and <strong>Google Merchant Center</strong> integration.</p>
+            <div class="pc-tags">
+              <span><i class="fa-brands fa-google"></i> GMB</span>
+              <span><i class="fa-solid fa-store"></i> Merchant Center</span>
+              <span><i class="fa-solid fa-chart-line"></i> Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. SEO & Workspace -->
+        <div class="project-card reveal" data-category="seo">
+          <div class="pc-image pc-image-icon">
+            <div class="pc-icon-large"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <span class="pc-category-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO</span>
+          </div>
+          <div class="pc-body">
+            <h3>SEO &amp; Google Workspace Setup</h3>
+            <p>Managed <strong>on-page &amp; technical SEO</strong> for client websites. Set up <strong>Google Workspace</strong> with custom domain emails, Drive, and admin console.</p>
+            <div class="pc-tags">
+              <span><i class="fa-solid fa-magnifying-glass"></i> SEO</span>
+              <span><i class="fa-brands fa-google"></i> Workspace</span>
+              <span><i class="fa-solid fa-envelope"></i> Email</span>
+              <span><i class="fa-solid fa-gauge-high"></i> Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Domain & Hosting Support -->
+        <div class="project-card reveal" data-category="hosting">
+          <div class="pc-image pc-image-icon">
+            <div class="pc-icon-large"><i class="fa-solid fa-server"></i></div>
+            <span class="pc-category-badge"><i class="fa-solid fa-server"></i> Hosting</span>
+          </div>
+          <div class="pc-body">
+            <h3>Domain &amp; Hosting Support</h3>
+            <p>End-to-end <strong>domain registration, DNS configuration, and hosting setup</strong> across cPanel, Hostinger, GoDaddy, and cloud platforms. SSL installation, email routing, and server maintenance.</p>
+            <div class="pc-tags">
+              <span><i class="fa-solid fa-globe"></i> Domain</span>
+              <span><i class="fa-solid fa-server"></i> Hosting</span>
+              <span><i class="fa-solid fa-shield-halved"></i> SSL</span>
+              <span><i class="fa-solid fa-envelope"></i> Email</span>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
 
   <!-- ═══ EDUCATION & CERTIFICATIONS ═══ -->
   <section class="section edu-section" id="education">

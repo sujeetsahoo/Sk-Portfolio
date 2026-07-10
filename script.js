@@ -453,3 +453,26 @@ console.log(
   '%c📧 sahusujeet751@gmail.com | 📞 +91 62064 06515',
   'color: #666; font-size: 12px;'
 );
+
+// ── PROJECT FILTERS ──
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Update active button
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    projectCards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hidden');
+        card.style.animation = 'fadeInDown 0.4s ease forwards';
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
